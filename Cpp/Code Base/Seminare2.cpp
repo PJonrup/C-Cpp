@@ -3,9 +3,9 @@
 /*
 References:
     T&          <-- lvalue reference                                                        - fun(a)    // int a
-    T const &   <-- lvalue const reference  - Read-only                                     - fun(c)    // int const c{}
+    T const &   <-- lvalue const reference  - Read-only    - can refere to rvalues!         - fun(c)    // int const c{}
     T&&         <-- rvalue reference        - int && x{5}; but x can be changed later.      - fun(23)
-    T const &&  <-- rvalue const reference  - Read-only
+    T const &&  <-- rvalue const reference  - Read-only 
 
 */
 
@@ -121,7 +121,7 @@ class Constructor
         {
             
         }
-        ~Constructor()
+        ~Constructor()  //destructor.
         {
             delete data;
         }

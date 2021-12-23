@@ -16,7 +16,7 @@ Initialization:
     int x{};         <-- Value init  (default-init)
     int x{5};        <-- List init   (Aggregate init* --> Use constructor --> Copy init)        -- Use this as often as possible - Example. Error will occur if you do int x{2.5} as it's a float!
 
-    * Aggregate init - (can not be done if the values does not have public members)
+    * Aggregate init - (can be done if the values (class,struct) have public members)
 
 Conversions:
     array-to-pointer:
@@ -26,18 +26,18 @@ Conversions:
 
     function to pointer:
         - you are either a genius or stupid.
-        - function --> function pointer --> bool (true or false).
+        - function --> function pointer --> bool (true or false, mostly true).
         - the flag -Werror will warn about this conversion"
 
     Promotion conversions:
         
-        long long > long > int > short > char > bool
+        long long > long > int* > short > char > bool       *default
 
         Example:
             'a' + 5 = int('a') + 5 = 97 + 5 = 102
             5l + 3 = 5l + 3l = 8l
         
-        long double > double > float
+        long double > double* > float       *default
 
         Example: 
             int x = 3.5f = 3.5 (double) = 3 (int)
@@ -69,7 +69,7 @@ struct Person   // struct is at default public - (usually used for very simple c
     int get_age() { return age; }   // function
 };
 
-union JSON   // Uses the same memory space - (If we set var = 2 and then str = "hello", we can only get str and val has been forgotten.)
+union JSON   // Uses the same memory space - (If we set val = 2 and then str = "hello", we can only get str and val has been forgotten.)    - mostly used to save memory space.
 {
     double val;
     char const* str;
