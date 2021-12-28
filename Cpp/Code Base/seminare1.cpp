@@ -1,6 +1,6 @@
 /*
 Data types: 
-    Fundamental      --> (int, float, double, ...), 
+    Fundamental      --> (int, float, double, std::nullptr_t, ...), 
     Array            --> (int x[5], c-string = "hello"), 
     Class            --> (struct, class, union, std::string), 
     Enum.
@@ -11,7 +11,7 @@ Value category:
     int x            <-- lvalues (can be reffered to later)
 
 Initialization:
-    int x = 5;       <-- Copy init   (Copy value --> fail)
+    int x = 5;       <-- Copy init   (Copy value --> fail)  (ACTUALLY: --> Convert value and then copy --> try to call a non-explicit constructor --> fail)
     int x(5);        <-- Direct init (Use constructor --> Aggregate init* --> Copy init)        -- Only use if you know that you want a constructor to be cont.
     int x{};         <-- Value init  (default-init)
     int x{5};        <-- List init   (Aggregate init* --> Use constructor --> Copy init)        -- Use this as often as possible - Example. Error will occur if you do int x{2.5} as it's a float!

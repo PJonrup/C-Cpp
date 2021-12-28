@@ -12,7 +12,7 @@
 using std::cout, std::cin, std::endl, std::setprecision, std::setfill, std::setw, std::string;
 
 
-// Example 1
+// Example 1        NOT DONE BY RULES OF ONE TYPE EACH
 
 int main() {
 
@@ -111,7 +111,7 @@ int main() {
 
     */
 
-    // ----------------------------------- Exmaple 2 -------------------------------
+    // ----------------------------------- Exmaple 2 -------------------------------   NOT DONE BY RULES OF ONE TYPE EACH
 
     /*
 
