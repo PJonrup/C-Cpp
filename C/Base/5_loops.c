@@ -22,7 +22,7 @@ int main(void) {
 
 }
 
-
+// Loops can also make use of the "break;" and "continue;" commands.
 
 
 

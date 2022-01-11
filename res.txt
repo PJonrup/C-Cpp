@@ -1,0 +1,8 @@
+
+Good Tutorials for further work:
+
+- https://www.freecodecamp.org/
+
+1. https://www.freecodecamp.org/news/improve-your-cpp-skills-by-building-an-audio-plugin/
+2. https://www.freecodecamp.org/news/learn-python-free-python-courses-for-beginners/
+3. https://www.freecodecamp.org/news/code-a-2d-game-engine-using-java/
