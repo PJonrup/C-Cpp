@@ -1,8 +1,35 @@
 
+// This is called a "symbolic constant" and is done by the preprocessor and not during compilation.
 #define YEAR 1998
 
 #include <stdio.h>
 #include <string.h>
+
+/*
+
+Global variables are static by default.
+
+Local variables are declared on the stack, by default, unless you explicitly
+allocate them on the Heap using pointers. (OBS: Memory management is needed).
+
+Static variables (ex. inside of functions) only initiates the first time the function is called.
+
+*/
+
+typedef int NUMBER;
+NUMBER one = 1;
+
+typedef enum {
+    MONDAY,         // 0
+    TUESDAY,        // 1
+    WEDNESDAY = 5,  // 5
+    THURSDAY,       // 6
+    FRIDAY,         // etc.
+    SATURDAY,
+    SUNDAY
+} weekday;
+
+int incrementAge(void);
 
 int main(void) {
 
@@ -11,7 +38,9 @@ int main(void) {
     short is = 50;
     long il = 123;
 
-    printf("%u", i);
+    printf("%u\n", TUESDAY);
+
+    printf("%u\n", i);
 
     unsigned char uc = 0;   // 0-255
     unsigned int ui = 0;    // 0-65,535
@@ -42,7 +71,7 @@ int main(void) {
     char name_sol_init[5] = {'W', 'r', 'o', 'o', 'm'};      // this works.
     char name_mul_init[6] = "Wroom";    // length is 6 because init with double quotes does not include '\0' as a final character.
 
-    printf("%s", name_mul_init);
+    printf("%s\n", name_mul_init);
 
     // -------------------- Strings --------------------
 
@@ -60,13 +89,29 @@ int main(void) {
     // -------------------- Pointers --------------------
 
     int age = 24;
-    printf("%p", &age);     // will print address in memory.
+    printf("%p\n", &age);     // will print address in memory.
 
     int * address = &age;
-    printf("%u", *address);
+    printf("%u\n", *address);
 
-    int prices[3] = {5, 4, 3};
-    printf("%u", *prices);      // 5
-    printf("%u", *(prices + 1));  // 4
+    int prices2[3] = {5, 4, 3};
+    printf("%u\n", *prices2);      // 5
+    printf("%u\n", *(prices2 + 1));  // 4
 
+
+    // -------------------- Static Variables --------------------
+
+    static int temp5;
+
+    printf("%d\n", incrementAge());
+    printf("%d\n", incrementAge());
+    printf("%d\n", incrementAge());
+
+}
+
+int incrementAge(void) {
+    static int age5;    // = 0 is not needed for static variables.
+    static int ages[3]; // = {0, 0, 0}
+    age5++;
+    return age5;
 }

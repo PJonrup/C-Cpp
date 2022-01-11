@@ -1,9 +1,26 @@
 
+// Run files with: 
+// cpp file.c -o file
+
+// "#" can be thought of as things that the preprocessor handels for us.
 #include <stdio.h>
+
+// This is called a "symbolic constant" and is done by the preprocessor and not during compilation.
+#define VALUE 1
+#define PI 3.14
+#define NAME "Steven"
+
+
+const int DEBUG = 0;
+
 
 int main(void) {
 
-    /*
+
+}
+
+/*
+    ----------- Format Specifiers -----------
 
     %c                  - char
     %d                  - signed int
@@ -31,6 +48,4 @@ int main(void) {
     - number after % specifies minimum field width
     - period (.) is used to separate field width and precision
 
-    */
-
-}
+*/
