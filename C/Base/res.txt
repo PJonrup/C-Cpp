@@ -6,3 +6,29 @@ Here are a couple of good resources to read through:
 3. https://www.freecodecamp.org/news/what-is-the-c-programming-language-beginner-tutorial/   - not done
 4. https://www.youtube.com/watch?v=KJgsSFOSQv0   - not done
 5. 
+
+
+Some project ideas for learning:
+
+1. Bank management system
+2. Diary management system
+3. Calendar using c
+4. Contact management system
+5. Library Management system
+6. Snake game
+7. Bus Reservation system
+8. Customer billing system
+9. Hospital management system
+10. Cyber management
+11. Cricket score display
+12. Employee management system
+13. Pacman Game
+14. Quiz game
+15. Phone-book application
+16. Election System
+17. Flight ticket booking
+18. Tourism Management system
+19. Simple Result system
+20. Stock Management system
+
+https://www.skyfilabs.com/blog/20-best-c-programming-projects-for-beginners

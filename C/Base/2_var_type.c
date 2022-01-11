@@ -70,8 +70,9 @@ int main(void) {
     char name[7];
     char name_sol_init[5] = {'W', 'r', 'o', 'o', 'm'};      // this works.
     char name_mul_init[6] = "Wroom";    // length is 6 because init with double quotes does not include '\0' as a final character.
+    char temp10[] = "Hello there";
 
-    printf("%s\n", name_mul_init);
+    printf("%s\n", temp10);
 
     // -------------------- Strings --------------------
 
