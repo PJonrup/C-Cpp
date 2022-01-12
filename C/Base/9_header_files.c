@@ -7,4 +7,6 @@
 
 int main(void) {
     printf("%u", calculateAge(1983));
+
+    return 0;
 }

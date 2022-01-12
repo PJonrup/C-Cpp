@@ -20,6 +20,7 @@ int main(void) {
 
     */
 
+    return 0;
 }
 
 // Loops can also make use of the "break;" and "continue;" commands.

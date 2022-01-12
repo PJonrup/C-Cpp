@@ -19,4 +19,5 @@ int main(int argc, char *argv[]) {
 
     // for more complex needs of argc and argv you can use packages like getopt.
 
+    return 0;
 }

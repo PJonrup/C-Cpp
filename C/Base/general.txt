@@ -1,0 +1,122 @@
+
+----------- Asymptotic Analysis: -----------
+
+--> The idea is to measure order of growth.
+--> Does not depend on machine, programming language, etc.
+--> No need to implement algorithms, we can analyze them instead.
+
+* operations take the same time, independant of input.
+* n loops (in for example a for-loop) is (time * n) + operation or other,
+* for-inside-for-loop is (time * n^2) + (time * n) + operation.
+
+
+----------- Order of Growth: -----------
+
+A function f(n) is said to be growing faster than g(n) if,
+
+Lim(n->inf.) g(n)/f(n) = 0
+or
+Lim(n->inf.) f(n)/g(n) = inf.
+for
+n >= 0, and f(n), g(n) >= 0.
+
+Direct way to find and compare growth:
+1. Ignore lower order terms
+2. Ignore leading term constant
+
+Example:    - (x) means that the element to the left has been removed.
+f(n) = 2(x)n^2 + n(x) + 6(x),   Order of Growth: n^2    (Quadratic)
+g(n) = 100(x)n + 3(x),          Order of Growth: n      (Linear)
+h(n) = log n(x) + 2(x)n + 3(x), Order of Growth: n      - as: log n < n
+
+How do we compare terms?
+c < loglog n < log n < n^(1/3) < n^(1/2) < n < n^2 < n^3 < 2^n < n^n
+
+
+----------- Best, Average and Worst Case: -----------
+Best: (constant)                - Pretty much useless
+Average: (Best + Worst) / 2     - Can be nice
+Worst: (linear)                 - Most important
+
+
+----------- Asymptotic Notation: -----------
+
+Big O: Exact or upper           
+Theta: Exact
+Omega: Exact or lower           - constant or higher than constant time (almost never used).
+
+
+----------- Big O Notation: -----------
+
+Direct way:
+3n^2 + 5n + 6,      - O(n^2)
+3n + 10n log n + 3, - O(n log n)
+10n^3 + 40n + 10    - O(n^3)
+
+We say f(n) = O(g(n)) 
+iff
+there exists constant c and n.
+such that f(n) <= cg(n)
+for all n >= n0.
+
+Big O also works for multiple variables:
+100n^2 + 1000m + n:     - O(n^2 m)
+
+Application:
+Use when we have an upper bound.
+and when you have a complex function.
+
+
+----------- Omega Notation: -----------
+
+f(n) = omega(g(n))
+iff there ecist constants c (where c > 0)
+and n0 (where n0 >= 0) such that
+cg(n) <= f(n) for all n >= n0.
+
+Application:
+When you have a lower bound.
+
+
+----------- Theta Notation: -----------
+
+f(n) = theta(g(n)) iff
+there ecists constants c1, c2 (where c1, c2 > 0)
+and n0 (where n0 >= 0) such that
+c1g(n) <= f(n) <= c2g(n)
+for all n >= n0.
+
+or
+Direct Method: (explained above)
+
+Application:
+Represents the Exact Bounds.
+
+
+----------- Analysis of Multiple loops: -----------
+
+Subsequent loops:
+Overall Theta(Direct Method and highest).
+
+Nested loops:
+Overall Theta(multiplied).
+
+Mixed loops:
+Overall Theta(Direct Method and highest)
+
+Different input (Mixed loops):
+Overall Theta(added together)
+
+
+----------- Analysis of Recursion: -----------
+
+...
+
+
+----------- Space Complexity: -----------
+
+Order of growth of memory (or RAM) space in terms of input size.
+
+Auxiliary Space: (more used)
+Order of growth of extra space on temporary space in terms of input.
+

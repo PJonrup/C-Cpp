@@ -108,6 +108,8 @@ int main(void) {
     printf("%d\n", incrementAge());
     printf("%d\n", incrementAge());
 
+    return 0;
+
 }
 
 int incrementAge(void) {

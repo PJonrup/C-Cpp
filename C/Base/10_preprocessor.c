@@ -37,6 +37,7 @@ int main(void) {
     printf("I am debugging\n");
 #endif
 
+    return 0;
 }
 
 // DEBUG can also be used as follows:

@@ -25,6 +25,7 @@ int main(void) {
 
     printf("%d", a);
 
+    return 0;
 }
 
 void doSomething(int value, int * var) {
