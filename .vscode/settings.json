@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "stdbool.h": "c",
         "stdio.h": "c",
-        "limits.h": "c"
+        "limits.h": "c",
+        "iosfwd": "cpp"
     }
 }
