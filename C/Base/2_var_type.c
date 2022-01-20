@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 /*
 
@@ -37,6 +38,7 @@ int main(void) {
     int i = 24;
     short is = 50;
     long il = 123;
+    bool test = true;
 
     printf("%u\n", TUESDAY);
 

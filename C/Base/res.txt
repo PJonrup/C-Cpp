@@ -5,7 +5,7 @@ Here are a couple of good resources to read through:
 2. https://www.freecodecamp.org/news/the-c-beginners-handbook/   - done
 3. https://www.freecodecamp.org/news/what-is-the-c-programming-language-beginner-tutorial/   - not done
 4. https://www.youtube.com/watch?v=KJgsSFOSQv0   - not done
-5. 
+5. https://www.guru99.com/c-storage-classes.html#6
 
 
 Some project ideas for learning:

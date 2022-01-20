@@ -120,3 +120,39 @@ Order of growth of memory (or RAM) space in terms of input size.
 Auxiliary Space: (more used)
 Order of growth of extra space on temporary space in terms of input.
 
+
+----------- Recursion -----------
+
+Many standard techniques are based on Recursion:
+Dynamic Progarmming,
+Backtracking,
+Divide and Conquer (Binary Search, Quick Sort and Merge Sort).
+
+Many problems inherently recursive:
+Tower of Manio,
+DFS based traversal.
+
+----------- Recursion vs Iteration -----------
+
+Usage:
+- Recursion is used when code size needs to be small, and time cplexity is not an issue.
+- Iteration is used when time complexity needs to be balanced against an expanded code size.
+
+Time complexity:
+- Recursion: Very high (generally exponential).
+- Iterative: Relatively lower time complexity (generally polynomial-logarithmic).
+
+
+----------- Tail Recursive -----------
+
+When the recursive function is called in the end of the function it is called "Tail Recursive".
+
+
+----------- Fibonatchi Recursion -----------
+
+int fib(int n) {
+    if (n<=1) return n;
+
+    return fib(n-1) + fib(n-2);
+}
+

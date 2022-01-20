@@ -44,6 +44,8 @@ int main(void) {
     %n                  - prints nothing
     %%                  - prints % character
 
+    %126s               - prevent buffer overflow and allows for the nul terminator.
+
     - minus symbol tells left alignment
     - number after % specifies minimum field width
     - period (.) is used to separate field width and precision

@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "iomanip": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "limits.h": "c"
     }
 }
