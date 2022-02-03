@@ -27,8 +27,9 @@ int main() {
     // std::sort(std::begin(arr), std::end(arr), std::greater<int>());  // <int> needed before C++14.
 
     // Binary Search for the opt (optimal) value to look for anger.
-    int low = 0, high = arr[n-1] - 1, opt;
+    int low = 0, high = arr[n-1], opt;
 
+    // minimum candies missing.
     while (low != high) {
         
         opt = (low + high + 1) / 2;

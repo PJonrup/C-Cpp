@@ -36,6 +36,7 @@ N - number of children
 
 python ljutnja.py < ljutnja.1.in | diff - ljutnja.1.ans
 
+155
 """
 
 
