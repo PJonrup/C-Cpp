@@ -1,1 +1,0 @@
-alias python ='winpty c:'
