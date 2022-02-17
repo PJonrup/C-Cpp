@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
 
-        if (arr[i] == last) {
+        if (arr[i] == last) {   // this does not need to be here, if n+1 is last then it is okay, otherwise not.
             err = false;
         }
 
